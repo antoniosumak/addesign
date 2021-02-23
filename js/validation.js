@@ -18,3 +18,15 @@ gumb.addEventListener("click", function () {
     document.getElementById("greskaporuka").style.visibility = "visible";
   } else document.getElementById("greskaporuka").style.visibility = "hidden";
 });
+
+function sendemail() {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "antonio2.sumak@gmail.com",
+    Password: "2YDYTK2M",
+    To: "sumakantonio@gmail.com",
+    From: email.value,
+    Subject: "Kontakt",
+    Body: poruka.value,
+  }).then((message) => alert(message));
+}
