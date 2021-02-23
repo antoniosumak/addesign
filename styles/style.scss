@@ -346,6 +346,177 @@
 }
 //USLUGE KRAJ
 
+//KONTAKT POČETAK
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  .uslugenaslovcrta {
+    margin-bottom: 50px;
+    z-index: 12;
+  }
+  .uslugenaslov {
+    text-align: center;
+    margin-top: 50px;
+    font-size: clamp(40px, 5vw, 45px);
+    color: $plava;
+    .crtausluge {
+      margin-top: -35px;
+      border-bottom: 30px solid $narancasta;
+      padding: 0px 20px;
+    }
+  }
+  .karticakontakt {
+    position: relative;
+    width: 80%;
+    min-height: 70vh;
+    margin: auto;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 50px;
+    .redkontakt {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+    .col1 {
+      position: relative;
+      border-radius: 0px 10px 10px 0px;
+      min-height: 70vh;
+      padding-top: 50px;
+      padding-left: 50px;
+      flex: 40%;
+      background-color: $plava;
+      h2 {
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+        color: white;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 1.1rem;
+        max-width: 31ch;
+        color: white;
+        font-weight: 300;
+      }
+      .kontaktikonice {
+        margin-top: 150px;
+        color: white;
+      }
+      .mailikona {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        i {
+          margin-right: 20px;
+          font-size: 1.1rem;
+        }
+      }
+      .telefonikona {
+        i {
+          margin-right: 20px;
+          font-size: 1.1rem;
+        }
+        display: flex;
+        align-items: center;
+      }
+      .socialkontakt {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        i {
+          font-size: 20px;
+          padding-right: 15px;
+          color: white;
+        }
+      }
+      .krugveci {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: $narancasta;
+        bottom: -30px;
+        right: -30px;
+
+        .krugmanji {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          opacity: 0.6;
+          border-radius: 50%;
+          background-color: #5e85ba;
+          top: -20px;
+          left: -20px;
+        }
+      }
+    }
+    .col2 {
+      padding-top: 50px;
+      padding-left: 50px;
+      flex: 60%;
+      padding-left: 35px;
+      padding-right: 35px;
+
+      .inputi {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      input {
+        border-radius: 999px;
+        border: 1px #777 solid;
+        outline: none;
+        padding: 7px 0px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+      label {
+        padding-bottom: 5px;
+      }
+      textarea {
+        border-radius: 30px;
+        border: 1px #777 solid;
+        outline: none;
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-bottom: 30px;
+      }
+      button {
+        border-radius: 8px;
+        padding: 8px 30px;
+        width: fit-content;
+        background-color: $narancasta;
+        border: none;
+        outline: none;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: transparent;
+        border: $narancasta 1px solid;
+
+        color: $narancasta;
+        outline: none;
+        transition: 0.3s all;
+      }
+    }
+  }
+}
+//KONTAKT KRAJ
+
 @media screen and (max-width: 1250px) {
   .redkartica {
     justify-content: center;
@@ -373,6 +544,9 @@
   .krugic {
     display: none;
   }
+  .col1 {
+    border-radius: 10px !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .herotekst {
@@ -388,5 +562,43 @@
   }
   .kvadrat {
     display: none;
+  }
+  .manjikvadratic {
+    display: none;
+  }
+  .krugveci {
+    display: none;
+    .krugmanji {
+      display: none;
+    }
+  }
+  .karticakontakt {
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    .col2 {
+      width: 100%;
+      margin: auto;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      .inputi {
+        width: 100%;
+        margin: auto;
+      }
+    }
+  }
+  .redkontakt {
+    .col1 {
+      padding-left: 25px !important;
+      .socialkontakt {
+        left: 25px !important;
+      }
+      h2 {
+        font-size: 1.2rem !important;
+      }
+      p {
+        font-size: 0.8rem !important;
+      }
+    }
   }
 }
