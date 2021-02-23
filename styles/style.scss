@@ -12,6 +12,7 @@
 .hero {
   position: relative;
   background: url("/slike/hero.jpg");
+  background-color: $plava;
   width: 100%;
   height: 100vh;
   background-position: center;
@@ -24,6 +25,7 @@
     top: 15%;
     transform: translate(15%);
   }
+
   h1 {
     font-size: clamp(40px, 6vw, 95px);
     color: white;
@@ -39,6 +41,8 @@
     max-width: 35ch;
     font-size: 1.3rem;
     color: white;
+    border-left: 5px solid $narancasta;
+    padding-left: 10px;
   }
   .herogumb {
     margin-top: 25px;
@@ -71,6 +75,38 @@
       transition: all 0.3s;
       transform: scale(1.08);
     }
+  }
+  .kvadrat {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    bottom: 0px;
+    left: 150px;
+    background-color: $plava;
+  }
+  .manjikvadratic {
+    position: absolute;
+    width: 20px;
+    background-color: $narancasta;
+    top: 350px;
+    bottom: 350px;
+    right: 0;
+  }
+  .kvadratic {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: $narancasta;
+    top: 20px;
+    left: 400px;
+  }
+  .kvadratic2 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: $narancasta;
+    bottom: 20px;
+    left: 50px;
   }
 }
 //LANDING PAGE KRAJ
@@ -199,7 +235,7 @@
   }
   .uslugenaslov {
     text-align: center;
-    top: 100px;
+    margin-top: 50px;
     font-size: clamp(40px, 5vw, 45px);
     color: $plava;
     .crtausluge {
@@ -290,7 +326,9 @@
       }
     }
   }
-
+  .uslugered.drugi {
+    margin-bottom: 120px;
+  }
   .gore {
     position: absolute;
     top: 0;
@@ -324,6 +362,12 @@
   .kartica.druga {
     height: 400px !important;
   }
+  .kvadratic {
+    display: none;
+  }
+  .kvadratic2 {
+    display: none;
+  }
 }
 @media screen and (max-width: 898px) {
   .krugic {
@@ -341,5 +385,8 @@
   .socials {
     right: 50% !important;
     transform: translate(50%);
+  }
+  .kvadrat {
+    display: none;
   }
 }

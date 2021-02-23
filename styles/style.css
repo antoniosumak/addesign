@@ -10,6 +10,7 @@
 .hero {
   position: relative;
   background: url("/slike/hero.jpg");
+  background-color: #2d4059;
   width: 100%;
   height: 100vh;
   background-position: center;
@@ -43,6 +44,8 @@
   max-width: 35ch;
   font-size: 1.3rem;
   color: white;
+  border-left: 5px solid #ea5455;
+  padding-left: 10px;
 }
 
 .hero .herogumb {
@@ -84,6 +87,42 @@
   transition: all 0.3s;
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
+}
+
+.hero .kvadrat {
+  position: absolute;
+  width: 400px;
+  top: 0;
+  bottom: 0px;
+  left: 150px;
+  background-color: #2d4059;
+}
+
+.hero .manjikvadratic {
+  position: absolute;
+  width: 20px;
+  background-color: #ea5455;
+  top: 350px;
+  bottom: 350px;
+  right: 0;
+}
+
+.hero .kvadratic {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: #ea5455;
+  top: 20px;
+  left: 400px;
+}
+
+.hero .kvadratic2 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: #ea5455;
+  bottom: 20px;
+  left: 50px;
 }
 
 .onama {
@@ -270,7 +309,7 @@
 
 .usluge .uslugenaslov {
   text-align: center;
-  top: 100px;
+  margin-top: 50px;
   font-size: clamp(40px, 5vw, 45px);
   color: #2d4059;
 }
@@ -386,6 +425,10 @@
   margin-bottom: 20px;
 }
 
+.usluge .uslugered.drugi {
+  margin-bottom: 120px;
+}
+
 .usluge .gore {
   position: absolute;
   top: 0;
@@ -421,6 +464,12 @@
   .kartica.druga {
     height: 400px !important;
   }
+  .kvadratic {
+    display: none;
+  }
+  .kvadratic2 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 898px) {
@@ -441,6 +490,9 @@
     right: 50% !important;
     -webkit-transform: translate(50%);
             transform: translate(50%);
+  }
+  .kvadrat {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
