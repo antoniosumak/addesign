@@ -172,24 +172,33 @@
           <div class="col2">
             <div class="inputi">
               <label for="">Ime i prezime</label>
-              <input type="text" class="imeprez" />
+              <input id="imeprezime" type="text" class="imeprez" />
+              <p id="greskaime" class="greska">Molimo unesite ime i prezime!</p>
               <label for="">Email adresa</label>
-              <input type="text" class="email" />
+              <input id="email" type="text" class="email" />
+              <p id="greskamail" class="greska">Molimo unesite email adresu!</p>
               <label for="">Broj telefona</label>
-              <input type="text" class="brojtelefona" />
+              <input id="telefon" type="text" class="brojtelefona" />
+              <p id="greskatelefon" class="greska">
+                Molimo unesite broj telefona!
+              </p>
               <label for="">Vaša poruka</label>
               <textarea
                 name="poruka"
-                id=""
+                id="poruka"
                 cols="30"
                 rows="10"
                 class="poruka"
               ></textarea>
-              <button>Pošalji</button>
+              <p id="greskaporuka" class="greska">
+                Molimo unesite Vašu poruku!
+              </p>
+              <button id="gumbkontakt">Pošalji</button>
             </div>
           </div>
         </div>
       </div>
     </section>
   </body>
+  <script src="/js/validation.js"></script>
 </html>

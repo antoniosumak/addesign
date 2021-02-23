@@ -418,12 +418,14 @@
         i {
           margin-right: 20px;
           font-size: 1.1rem;
+          color: $narancasta;
         }
       }
       .telefonikona {
         i {
           margin-right: 20px;
           font-size: 1.1rem;
+          color: $narancasta;
         }
         display: flex;
         align-items: center;
@@ -436,6 +438,12 @@
           font-size: 20px;
           padding-right: 15px;
           color: white;
+        }
+        i:hover {
+          color: $narancasta;
+          transform: scale(1.1);
+          transition: 0.3s all;
+          cursor: pointer;
         }
       }
       .krugveci {
@@ -479,10 +487,20 @@
         outline: none;
         padding: 7px 0px;
         padding-left: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
       }
       label {
         padding-bottom: 5px;
+      }
+      .greska {
+        margin-bottom: 10px;
+      }
+      #greskaime,
+      #greskamail,
+      #greskatelefon,
+      #greskaporuka {
+        visibility: hidden;
+        color: red;
       }
       textarea {
         border-radius: 30px;
@@ -490,7 +508,7 @@
         outline: none;
         padding-top: 20px;
         padding-left: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
       }
       button {
         border-radius: 8px;
