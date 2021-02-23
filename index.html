@@ -170,36 +170,91 @@
             </div>
           </div>
           <div class="col2">
-            <div class="inputi">
-              <label for="">Ime i prezime</label>
-              <input id="imeprezime" type="text" class="imeprez" />
-              <p id="greskaime" class="greska">Molimo unesite ime i prezime!</p>
-              <label for="">Email adresa</label>
-              <input id="email" type="text" class="email" />
-              <p id="greskamail" class="greska">Molimo unesite email adresu!</p>
-              <label for="">Broj telefona</label>
-              <input id="telefon" type="text" class="brojtelefona" />
-              <p id="greskatelefon" class="greska">
-                Molimo unesite broj telefona!
-              </p>
-              <label for="">Vaša poruka</label>
-              <textarea
-                name="poruka"
-                id="poruka"
-                cols="30"
-                rows="10"
-                class="poruka"
-              ></textarea>
-              <p id="greskaporuka" class="greska">
-                Molimo unesite Vašu poruku!
-              </p>
-              <button id="gumbkontakt" onclick="sendemail()">Pošalji</button>
-            </div>
+            <form
+              id="my-form"
+              action="https://formspree.io/f/xknpadar"
+              method="POST"
+            >
+              <div class="inputi">
+                <label for="">Ime i prezime</label>
+                <input id="imeprezime" type="text" class="imeprez" />
+                <p id="greskaime" class="greska">
+                  Molimo unesite ime i prezime!
+                </p>
+                <label for="">Email adresa</label>
+                <input id="email" type="text" class="email" />
+                <p id="greskamail" class="greska">
+                  Molimo unesite email adresu!
+                </p>
+                <label for="">Broj telefona</label>
+                <input id="telefon" type="text" class="brojtelefona" />
+                <p id="greskatelefon" class="greska">
+                  Molimo unesite broj telefona!
+                </p>
+                <label for="">Vaša poruka</label>
+                <textarea
+                  name="poruka"
+                  id="poruka"
+                  cols="30"
+                  rows="10"
+                  class="poruka"
+                ></textarea>
+                <p id="greskaporuka" class="greska">
+                  Molimo unesite Vašu poruku!
+                </p>
+                <button id="my-form-button">Pošalji</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
   </body>
   <script src="/js/validation.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      // get the form elements defined in your form HTML above
+
+      var form = document.getElementById("my-form");
+      var button = document.getElementById("my-form-button");
+      var status = document.getElementById("my-form-status");
+
+      // Success and Error functions for after the form is submitted
+
+      function success() {
+        form.reset();
+        button.style = "display: none ";
+        status.innerHTML = "Thanks!";
+      }
+
+      function error() {
+        status.innerHTML = "Oops! There was a problem.";
+      }
+
+      // handle the form submission event
+
+      form.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var data = new FormData(form);
+        ajax(form.method, form.action, data, success, error);
+      });
+    });
+
+    // helper function for sending an AJAX request
+
+    function ajax(method, url, data, success, error) {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          success(xhr.response, xhr.responseType);
+        } else {
+          error(xhr.status, xhr.response, xhr.responseType);
+        }
+      };
+      xhr.send(data);
+    }
+  </script>
 </html>
