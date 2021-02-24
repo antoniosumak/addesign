@@ -23,7 +23,7 @@ gumb.addEventListener("click", function () {
     Host: "smtp.gmail.com",
     Username: "antonio2.sumak@gmail.com",
     Password: "2YDYTK2M",
-    To: "sumakantonio@gmail.com",
+    To: "antonio2.sumak@gmail.com",
     From: inputi.elements["emailadresa"].value,
     Subject: "This is the subject",
     Body:
