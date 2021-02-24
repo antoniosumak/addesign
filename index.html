@@ -173,7 +173,7 @@
             </div>
           </div>
           <div class="col2">
-            <form>
+            <form onsubmit="return false" class="form">
               <div class="inputi">
                 <label for="">Ime i prezime</label>
                 <input
@@ -216,14 +216,14 @@
                 <p id="greskaporuka" class="greska">
                   Molimo unesite Vašu poruku!
                 </p>
-                <button id="gumb" onclick="salji()">Pošalji</button>
+                <button id="gumb">Pošalji</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/js/validation.js"></script>
   </body>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="/js/validation.js"></script>
 </html>

@@ -18,9 +18,7 @@ gumb.addEventListener("click", function () {
   if (poruka.value == "") {
     document.getElementById("greskaporuka").style.visibility = "visible";
   } else document.getElementById("greskaporuka").style.visibility = "hidden";
-});
 
-function salji() {
   Email.send({
     Host: "smtp.gmail.com",
     Username: "antonio2.sumak@gmail.com",
@@ -29,11 +27,11 @@ function salji() {
     From: inputi.elements["emailadresa"].value,
     Subject: "This is the subject",
     Body:
-      inputi.elements["imeprezime"].value +
+      imeprezime.value +
       "<br>" +
-      inputi.elements["brojmobitela"] +
+      brojmobitela["brojmobitela"] +
       "<br>" +
-      inputi.elements["poruka"] +
+      poruka["poruka"] +
       "<br>",
-  }).then((message) => alert(message));
-}
+  }).then((msg) => alert("Email uspješno poslan!"));
+});
