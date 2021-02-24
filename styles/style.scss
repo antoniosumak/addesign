@@ -532,6 +532,19 @@
       }
     }
   }
+  .uspjesno {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    #potvrdaikona {
+      display: none;
+      color: green;
+      margin-right: 10px;
+    }
+    #potvrda {
+      display: none;
+    }
+  }
 }
 //KONTAKT KRAJ
 

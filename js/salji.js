@@ -9,6 +9,8 @@ function sendMail() {
   emailjs
     .send("service_c9gkc1c", "template_xrfnrle", tempParms)
     .then(function (res) {
+      document.getElementById("potvrda").style.display = "block";
+      document.getElementById("potvrdaikona").style.display = "block";
       console.log("success", res.status);
     });
 }
