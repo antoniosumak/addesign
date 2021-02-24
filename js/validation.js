@@ -2,7 +2,7 @@ var imeprezime = document.getElementById("imeprezime");
 var email = document.getElementById("email");
 var telefon = document.getElementById("telefon");
 var poruka = document.getElementById("poruka");
-var gumb = document.getElementById("my-form-button");
+var gumb = document.getElementById("gumb");
 const inputi = document.querySelector("form");
 
 gumb.addEventListener("click", function () {
