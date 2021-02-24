@@ -3,7 +3,6 @@ var email = document.getElementById("email");
 var telefon = document.getElementById("telefon");
 var poruka = document.getElementById("poruka");
 var gumb = document.getElementById("gumb");
-const inputi = document.querySelector("form");
 
 gumb.addEventListener("click", function () {
   if (imeprezime.value == "") {
@@ -18,20 +17,4 @@ gumb.addEventListener("click", function () {
   if (poruka.value == "") {
     document.getElementById("greskaporuka").style.visibility = "visible";
   } else document.getElementById("greskaporuka").style.visibility = "hidden";
-
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "antonio2.sumak@gmail.com",
-    Password: "2YDYTK2M",
-    To: "antonio2.sumak@gmail.com",
-    From: inputi.elements["emailadresa"].value,
-    Subject: "This is the subject",
-    Body:
-      inputi.elements["imeprezime"].value +
-      "<br>" +
-      inputi.elements["brojmobitela"].value +
-      "<br>" +
-      inputi.elements["poruka"].value +
-      "<br>",
-  }).then((msg) => alert("Email uspješno poslan!"));
 });
