@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.css" />
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_z0txZ4uNtC5xudXJxv3M8");
+      })();
+    </script>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -174,52 +182,48 @@
             </div>
           </div>
           <div class="col2">
-            <form onsubmit="return false" id="form">
-              <div class="inputi">
-                <label for="">Ime i prezime</label>
-                <input
-                  id="imeprezime"
-                  type="text"
-                  class="imeprez"
-                  name="imeprezime"
-                />
-                <p id="greskaime" class="greska">
-                  Molimo unesite ime i prezime!
-                </p>
-                <label for="">Email adresa</label>
-                <input
-                  id="email"
-                  type="text"
-                  class="email"
-                  name="emailadresa"
-                />
-                <p id="greskamail" class="greska">
-                  Molimo unesite email adresu!
-                </p>
-                <label for="">Broj telefona</label>
-                <input
-                  id="telefon"
-                  type="text"
-                  class="brojtelefona"
-                  name="brojmobitela"
-                />
-                <p id="greskatelefon" class="greska">
-                  Molimo unesite broj telefona!
-                </p>
-                <label for="">Vaša poruka</label>
-                <textarea
-                  name="poruka"
-                  id="poruka"
-                  cols="30"
-                  rows="10"
-                  class="poruka"
-                ></textarea>
-                <p id="greskaporuka" class="greska">
-                  Molimo unesite Vašu poruku!
-                </p>
-                <button id="gumb" onclick="salji()">Pošalji</button>
-              </div>
-            </form>
+            <div class="inputi">
+              <label for="">Ime i prezime</label>
+              <input
+                id="imeprezime"
+                type="text"
+                class="imeprez"
+                name="imeprezime"
+              />
+              <p id="greskaime" class="greska">Molimo unesite ime i prezime!</p>
+              <label for="">Email adresa</label>
+              <input
+                id="emailadresa"
+                type="text"
+                class="email"
+                name="emailadresa"
+              />
+              <p id="greskamail" class="greska">Molimo unesite email adresu!</p>
+              <label for="">Broj telefona</label>
+              <input
+                id="brojmobitela"
+                type="text"
+                class="brojtelefona"
+                name="brojmobitela"
+              />
+              <p id="greskatelefon" class="greska">
+                Molimo unesite broj telefona!
+              </p>
+              <label for="">Vaša poruka</label>
+              <textarea
+                name="poruka"
+                id="poruka"
+                cols="30"
+                rows="10"
+                class="poruka"
+              ></textarea>
+              <p id="greskaporuka" class="greska">
+                Molimo unesite Vašu poruku!
+              </p>
+              <button type="submit" id="gumb" onclick="sendMail()">
+                Pošalji
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 var imeprezime = document.getElementById("imeprezime");
-var email = document.getElementById("email");
-var telefon = document.getElementById("telefon");
+var email = document.getElementById("emailadresa");
+var telefon = document.getElementById("brojmobitela");
 var poruka = document.getElementById("poruka");
 var gumb = document.getElementById("gumb");
 

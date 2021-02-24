@@ -1,18 +1,14 @@
-const inputi = document.querySelector("form");
+function sendMail() {
+  var tempParms = {
+    imeprezime: document.getElementById("imeprezime").value,
+    emailadresa: document.getElementById("emailadresa").value,
+    brojmobitela: document.getElementById("brojmobitela").value,
+    poruka: document.getElementById("poruka").value,
+  };
 
-function salji() {
-  Email.send({
-    Host: "smtp.mailtrap.io",
-    Username: "98f4221afe9eee",
-    Password: "5687a381648608",
-    To: "sumakantonio@gmail.com",
-    From: inputi.elements["emailadresa"].value,
-    Subject: "This is the subject",
-    Body:
-      inputi.elements["imeprezime"].value +
-      "<br>" +
-      inputi.elements["brojmobitela"].value +
-      "<br>" +
-      inputi.elements["poruka"].value,
-  }).then((message) => alert(message));
+  emailjs
+    .send("service_c9gkc1c", "template_xrfnrle", tempParms)
+    .then(function (res) {
+      console.log("success", res.status);
+    });
 }
