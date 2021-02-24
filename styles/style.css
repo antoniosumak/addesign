@@ -1,0 +1,784 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.hero {
+  position: relative;
+  background: url("/slike/hero.jpg");
+  background-color: #2d4059;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero .herotekst {
+  position: absolute;
+  width: 80%;
+  margin: auto;
+  top: 15%;
+  -webkit-transform: translate(15%);
+          transform: translate(15%);
+}
+
+.hero h1 {
+  font-size: clamp(40px, 6vw, 95px);
+  color: white;
+  font-weight: 300;
+}
+
+.hero h1 .naslovspan {
+  color: #ea5455;
+  font-weight: 900;
+  font-size: clamp(40px, 6vw, 95px);
+}
+
+.hero .heroopis {
+  margin-top: 35px;
+  max-width: 35ch;
+  font-size: 1.3rem;
+  color: white;
+  border-left: 5px solid #ea5455;
+  padding-left: 10px;
+}
+
+.hero .herogumb {
+  margin-top: 25px;
+  background-color: #ea5455;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+.hero .herogumb:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #ea5455;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.hero .socials {
+  position: absolute;
+  bottom: 12%;
+  right: 12%;
+}
+
+.hero .socials i {
+  font-size: 26px;
+  padding: 0px 10px;
+  color: white;
+}
+
+.hero .socials i:hover {
+  cursor: pointer;
+  color: #ea5455;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.hero .kvadrat {
+  position: absolute;
+  width: 400px;
+  top: 0;
+  bottom: 0px;
+  left: 150px;
+  background-color: #2d4059;
+}
+
+.hero .manjikvadratic {
+  position: absolute;
+  width: 20px;
+  background-color: #ea5455;
+  top: 350px;
+  bottom: 350px;
+  right: 0;
+}
+
+.hero .kvadratic {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: #ea5455;
+  top: 20px;
+  left: 400px;
+}
+
+.hero .kvadratic2 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: #ea5455;
+  bottom: 20px;
+  left: 50px;
+}
+
+.onama {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2d4059;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.onama .onamanaslovcrta {
+  z-index: 10;
+  margin-top: 50px;
+}
+
+.onama .onamanaslov {
+  text-align: center;
+  top: 100px;
+  font-size: clamp(40px, 5vw, 45px);
+  color: white;
+}
+
+.onama .onamanaslov .crta {
+  margin-top: -35px;
+  border-bottom: 30px solid #ea5455;
+  padding: 0px 20px;
+}
+
+.onama .prozirnakartica {
+  border-radius: 15px;
+  position: relative;
+  margin-top: 100px !important;
+  width: 80%;
+  min-height: 500px;
+  margin: auto;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  margin-bottom: 60px;
+}
+
+.onama .prozirnakartica .tkosmomi {
+  margin-top: 90px;
+  color: white;
+  max-width: 65ch;
+}
+
+.onama .prozirnakartica .redkartica {
+  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.onama .prozirnakartica .kartica {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #ea5455;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.onama .prozirnakartica .kartica i {
+  font-size: 35px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.onama .prozirnakartica .kartica .naslovkartice {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #15181d;
+}
+
+.onama .prozirnakartica .kartica .opiskartice {
+  padding: 0px 20px;
+  color: white;
+}
+
+.onama .prozirnakartica .kartica.druga {
+  border-radius: 15px;
+  height: 450px;
+  background-color: #fab95b;
+}
+
+.onama .prozirnakartica .kartica.prva {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.onama .prozirnakartica .kartica.treca {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.onama .top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 700px;
+}
+
+.onama .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 400px;
+}
+
+.usluge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.usluge .uslugenaslovcrta {
+  margin-bottom: 50px;
+  z-index: 12;
+}
+
+.usluge .uslugenaslov {
+  text-align: center;
+  margin-top: 50px;
+  font-size: clamp(40px, 5vw, 45px);
+  color: #2d4059;
+}
+
+.usluge .uslugenaslov .crtausluge {
+  margin-top: -35px;
+  border-bottom: 30px solid #ea5455;
+  padding: 0px 20px;
+}
+
+.usluge .uslugered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.usluge .uslugered .uslugekartica.treca,
+.usluge .uslugered .uslugekartica.cetvrta {
+  background: #020024;
+  background: -webkit-gradient(linear, left top, left bottom, from(#020024), color-stop(0%, #ea5455), to(#2d4059));
+  background: linear-gradient(180deg, #020024 0%, #ea5455 0%, #2d4059 100%);
+}
+
+.usluge .uslugered .uslugekartica.treca i,
+.usluge .uslugered .uslugekartica.cetvrta i {
+  color: #15181d;
+}
+
+.usluge .uslugered .uslugekartica.treca .uslugatekst,
+.usluge .uslugered .uslugekartica.cetvrta .uslugatekst {
+  color: white;
+}
+
+.usluge .uslugered .uslugekartica.treca .uslugaopis,
+.usluge .uslugered .uslugekartica.cetvrta .uslugaopis {
+  color: white;
+}
+
+.usluge .uslugered .uslugekartica {
+  position: relative;
+  z-index: 10;
+  width: 400px;
+  height: 350px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+  background: #020024;
+  background: -webkit-gradient(linear, left bottom, left top, from(#020024), color-stop(0%, #ea5455), to(#2d4059));
+  background: linear-gradient(0deg, #020024 0%, #ea5455 0%, #2d4059 100%);
+  border-radius: 20px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.usluge .uslugered .uslugekartica i {
+  font-size: 40px;
+  color: white;
+}
+
+.usluge .uslugered .uslugekartica .uslugatekst {
+  margin-top: 30px;
+  color: #15181d;
+  font-size: 1.2rem;
+  color: #15181d;
+}
+
+.usluge .uslugered .uslugekartica .uslugaopis {
+  text-align: center;
+  margin-top: 15px;
+  padding: 0px 20px;
+  color: #15181d;
+}
+
+.usluge .uslugered .uslugekartica .krugic {
+  z-index: 11;
+  position: absolute;
+  bottom: -43px;
+  right: -44px;
+  background-color: #ea5455;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.usluge .uslugered .uslugekartica.druga .uslugaopis {
+  margin-bottom: 25px;
+}
+
+.usluge .uslugered .uslugekartica.treca .uslugaopis {
+  margin-bottom: 20px;
+}
+
+.usluge .uslugered.drugi {
+  margin-bottom: 120px;
+}
+
+.usluge .gore {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 700px;
+}
+
+.usluge .dole {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 400px;
+}
+
+.kontakt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.kontakt .uslugenaslovcrta {
+  margin-bottom: 50px;
+  z-index: 12;
+}
+
+.kontakt .uslugenaslov {
+  text-align: center;
+  margin-top: 50px;
+  font-size: clamp(40px, 5vw, 45px);
+  color: #2d4059;
+}
+
+.kontakt .uslugenaslov .crtausluge {
+  margin-top: -35px;
+  border-bottom: 30px solid #ea5455;
+  padding: 0px 20px;
+}
+
+.kontakt .karticakontakt {
+  position: relative;
+  width: 80%;
+  min-height: 70vh;
+  margin: auto;
+  background-color: white;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 50px;
+}
+
+.kontakt .karticakontakt .redkontakt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+}
+
+.kontakt .karticakontakt .col1 {
+  position: relative;
+  border-radius: 0px 10px 10px 0px;
+  min-height: 70vh;
+  padding-top: 50px;
+  padding-left: 50px;
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+  background-color: #2d4059;
+}
+
+.kontakt .karticakontakt .col1 h2 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.kontakt .karticakontakt .col1 p {
+  font-size: 1.1rem;
+  max-width: 31ch;
+  color: white;
+  font-weight: 300;
+}
+
+.kontakt .karticakontakt .col1 .kontaktikonice {
+  margin-top: 45%;
+  color: white;
+}
+
+.kontakt .karticakontakt .col1 .mailikona {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.kontakt .karticakontakt .col1 .mailikona i {
+  margin-right: 20px;
+  font-size: 1.1rem;
+  color: #ea5455;
+}
+
+.kontakt .karticakontakt .col1 .telefonikona {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.kontakt .karticakontakt .col1 .telefonikona i {
+  margin-right: 20px;
+  font-size: 1.1rem;
+  color: #ea5455;
+}
+
+.kontakt .karticakontakt .col1 .socialkontakt {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+.kontakt .karticakontakt .col1 .socialkontakt i {
+  font-size: 20px;
+  padding-right: 15px;
+  color: white;
+}
+
+.kontakt .karticakontakt .col1 .socialkontakt i:hover {
+  color: #ea5455;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.kontakt .karticakontakt .col1 .krugveci {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ea5455;
+  bottom: -30px;
+  right: -30px;
+}
+
+.kontakt .karticakontakt .col1 .krugveci .krugmanji {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  opacity: 0.6;
+  border-radius: 50%;
+  background-color: #5e85ba;
+  top: -20px;
+  left: -20px;
+}
+
+.kontakt .karticakontakt .col2 {
+  padding-top: 50px;
+  padding-left: 50px;
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.kontakt .karticakontakt .col2 .inputi {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.kontakt .karticakontakt .col2 input {
+  border-radius: 999px;
+  border: 1px #777 solid;
+  outline: none;
+  padding: 7px 0px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+.kontakt .karticakontakt .col2 label {
+  padding-bottom: 5px;
+}
+
+.kontakt .karticakontakt .col2 .greska {
+  margin-bottom: 10px;
+}
+
+.kontakt .karticakontakt .col2 #greskaime,
+.kontakt .karticakontakt .col2 #greskamail,
+.kontakt .karticakontakt .col2 #greskatelefon,
+.kontakt .karticakontakt .col2 #greskaporuka {
+  visibility: hidden;
+  color: red;
+}
+
+.kontakt .karticakontakt .col2 textarea {
+  border-radius: 30px;
+  border: 1px #777 solid;
+  outline: none;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+.kontakt .karticakontakt .col2 button {
+  border-radius: 8px;
+  padding: 8px 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ea5455;
+  border: none;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.kontakt .karticakontakt .col2 button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: #ea5455 1px solid;
+  color: #ea5455;
+  outline: none;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+@media screen and (max-width: 1250px) {
+  .redkartica {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .redkartica .kartica {
+    margin: 10px 0px;
+    border-radius: 10px !important;
+  }
+  .tkosmomi {
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .kartica.druga {
+    height: 400px !important;
+  }
+  .kvadratic {
+    display: none;
+  }
+  .kvadratic2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 898px) {
+  .krugic {
+    display: none;
+  }
+  .col1 {
+    border-radius: 10px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .herotekst {
+    text-align: center;
+  }
+  .uslugekartica {
+    margin: 10px 0px !important;
+    width: 300px !important;
+  }
+  .socials {
+    right: 50% !important;
+    -webkit-transform: translate(50%);
+            transform: translate(50%);
+  }
+  .kvadrat {
+    display: none;
+  }
+  .manjikvadratic {
+    display: none;
+  }
+  .krugveci {
+    display: none;
+  }
+  .krugveci .krugmanji {
+    display: none;
+  }
+  .karticakontakt {
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+  }
+  .karticakontakt .col2 {
+    width: 100%;
+    margin: auto;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .karticakontakt .col2 .inputi {
+    width: 100%;
+    margin: auto;
+  }
+  .redkontakt .col1 {
+    padding-left: 25px !important;
+  }
+  .redkontakt .col1 .socialkontakt {
+    left: 25px !important;
+  }
+  .redkontakt .col1 h2 {
+    font-size: 1.2rem !important;
+  }
+  .redkontakt .col1 p {
+    font-size: 0.8rem !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

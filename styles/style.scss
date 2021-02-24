@@ -1,0 +1,622 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+@import "./varijable";
+
+//LANDING PAGE POČETAK
+.hero {
+  position: relative;
+  background: url("/slike/hero.jpg");
+  background-color: $plava;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .herotekst {
+    position: absolute;
+    width: 80%;
+    margin: auto;
+    top: 15%;
+    transform: translate(15%);
+  }
+
+  h1 {
+    font-size: clamp(40px, 6vw, 95px);
+    color: white;
+    font-weight: 300;
+    .naslovspan {
+      color: $narancasta;
+      font-weight: 900;
+      font-size: clamp(40px, 6vw, 95px);
+    }
+  }
+  .heroopis {
+    margin-top: 35px;
+    max-width: 35ch;
+    font-size: 1.3rem;
+    color: white;
+    border-left: 5px solid $narancasta;
+    padding-left: 10px;
+  }
+  .herogumb {
+    margin-top: 25px;
+    background-color: $narancasta;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
+  .herogumb:hover {
+    cursor: pointer;
+    background-color: white;
+    color: $narancasta;
+    transition: all 0.5s;
+    transform: scale(1.05);
+  }
+  .socials {
+    position: absolute;
+    bottom: 12%;
+    right: 12%;
+    i {
+      font-size: 26px;
+      padding: 0px 10px;
+      color: white;
+    }
+    i:hover {
+      cursor: pointer;
+      color: $narancasta;
+      transition: all 0.3s;
+      transform: scale(1.08);
+    }
+  }
+  .kvadrat {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    bottom: 0px;
+    left: 150px;
+    background-color: $plava;
+  }
+  .manjikvadratic {
+    position: absolute;
+    width: 20px;
+    background-color: $narancasta;
+    top: 350px;
+    bottom: 350px;
+    right: 0;
+  }
+  .kvadratic {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: $narancasta;
+    top: 20px;
+    left: 400px;
+  }
+  .kvadratic2 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: $narancasta;
+    bottom: 20px;
+    left: 50px;
+  }
+}
+//LANDING PAGE KRAJ
+
+//O NAMA POČETAK
+.onama {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $plava;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  .onamanaslovcrta {
+    z-index: 10;
+    margin-top: 50px;
+  }
+  .onamanaslov {
+    text-align: center;
+    top: 100px;
+    font-size: clamp(40px, 5vw, 45px);
+    color: white;
+    .crta {
+      margin-top: -35px;
+      border-bottom: 30px solid $narancasta;
+      padding: 0px 20px;
+    }
+  }
+  .prozirnakartica {
+    border-radius: 15px;
+    position: relative;
+    margin-top: 100px !important;
+    width: 80%;
+    min-height: 500px;
+    margin: auto;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    margin-bottom: 60px;
+    .tkosmomi {
+      margin-top: 90px;
+      color: white;
+      max-width: 65ch;
+    }
+    .redkartica {
+      margin-top: 50px;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-bottom: 20px;
+    }
+    .kartica {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      background-color: $narancasta;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+      i {
+        font-size: 35px;
+        color: white;
+        margin-bottom: 30px;
+      }
+      .naslovkartice {
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+        color: $crna;
+      }
+      .opiskartice {
+        padding: 0px 20px;
+        color: white;
+      }
+    }
+    .kartica.druga {
+      border-radius: 15px;
+      height: 450px;
+      background-color: #fab95b;
+    }
+    .kartica.prva {
+      border-radius: 10px 0px 0px 10px;
+    }
+    .kartica.treca {
+      border-radius: 0px 10px 10px 0px;
+    }
+  }
+  .top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 700px;
+  }
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 400px;
+  }
+}
+//O NAMA KRAJ
+
+//USLUGE POČETAK
+.usluge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  .uslugenaslovcrta {
+    margin-bottom: 50px;
+    z-index: 12;
+  }
+  .uslugenaslov {
+    text-align: center;
+    margin-top: 50px;
+    font-size: clamp(40px, 5vw, 45px);
+    color: $plava;
+    .crtausluge {
+      margin-top: -35px;
+      border-bottom: 30px solid $narancasta;
+      padding: 0px 20px;
+    }
+  }
+  .uslugered {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .uslugekartica.treca,
+    .uslugekartica.cetvrta {
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(234, 84, 85, 1) 0%,
+        rgba(45, 64, 89, 1) 100%
+      );
+      i {
+        color: $crna;
+      }
+      .uslugatekst {
+        color: white;
+      }
+      .uslugaopis {
+        color: white;
+      }
+    }
+    .uslugekartica {
+      position: relative;
+      z-index: 10;
+      width: 400px;
+      height: 350px;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(234, 84, 85, 1) 0%,
+        rgba(45, 64, 89, 1) 100%
+      );
+      border-radius: 20px;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      i {
+        font-size: 40px;
+        color: white;
+      }
+      .uslugatekst {
+        margin-top: 30px;
+        color: $crna;
+        font-size: 1.2rem;
+        color: $crna;
+      }
+      .uslugaopis {
+        text-align: center;
+        margin-top: 15px;
+        padding: 0px 20px;
+        color: $crna;
+      }
+      .krugic {
+        z-index: 11;
+        position: absolute;
+        bottom: -43px;
+        right: -44px;
+        background-color: $narancasta;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+    .uslugekartica.druga {
+      .uslugaopis {
+        margin-bottom: 25px;
+      }
+    }
+    .uslugekartica.treca {
+      .uslugaopis {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .uslugered.drugi {
+    margin-bottom: 120px;
+  }
+  .gore {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 700px;
+  }
+  .dole {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 400px;
+  }
+}
+//USLUGE KRAJ
+
+//KONTAKT POČETAK
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  .uslugenaslovcrta {
+    margin-bottom: 50px;
+    z-index: 12;
+  }
+  .uslugenaslov {
+    text-align: center;
+    margin-top: 50px;
+    font-size: clamp(40px, 5vw, 45px);
+    color: $plava;
+    .crtausluge {
+      margin-top: -35px;
+      border-bottom: 30px solid $narancasta;
+      padding: 0px 20px;
+    }
+  }
+  .karticakontakt {
+    position: relative;
+    width: 80%;
+    min-height: 70vh;
+    margin: auto;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 50px;
+    .redkontakt {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+    .col1 {
+      position: relative;
+      border-radius: 0px 10px 10px 0px;
+      min-height: 70vh;
+      padding-top: 50px;
+      padding-left: 50px;
+      flex: 40%;
+      background-color: $plava;
+      h2 {
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+        color: white;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 1.1rem;
+        max-width: 31ch;
+        color: white;
+        font-weight: 300;
+      }
+      .kontaktikonice {
+        margin-top: 45%;
+        color: white;
+      }
+      .mailikona {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        i {
+          margin-right: 20px;
+          font-size: 1.1rem;
+          color: $narancasta;
+        }
+      }
+      .telefonikona {
+        i {
+          margin-right: 20px;
+          font-size: 1.1rem;
+          color: $narancasta;
+        }
+        display: flex;
+        align-items: center;
+      }
+      .socialkontakt {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        i {
+          font-size: 20px;
+          padding-right: 15px;
+          color: white;
+        }
+        i:hover {
+          color: $narancasta;
+          transform: scale(1.1);
+          transition: 0.3s all;
+          cursor: pointer;
+        }
+      }
+      .krugveci {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: $narancasta;
+        bottom: -30px;
+        right: -30px;
+
+        .krugmanji {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          opacity: 0.6;
+          border-radius: 50%;
+          background-color: #5e85ba;
+          top: -20px;
+          left: -20px;
+        }
+      }
+    }
+    .col2 {
+      padding-top: 50px;
+      padding-left: 50px;
+      flex: 60%;
+      padding-left: 35px;
+      padding-right: 35px;
+
+      .inputi {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      input {
+        border-radius: 999px;
+        border: 1px #777 solid;
+        outline: none;
+        padding: 7px 0px;
+        padding-left: 20px;
+        margin-bottom: 5px;
+      }
+      label {
+        padding-bottom: 5px;
+      }
+      .greska {
+        margin-bottom: 10px;
+      }
+      #greskaime,
+      #greskamail,
+      #greskatelefon,
+      #greskaporuka {
+        visibility: hidden;
+        color: red;
+      }
+      textarea {
+        border-radius: 30px;
+        border: 1px #777 solid;
+        outline: none;
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-bottom: 5px;
+      }
+      button {
+        border-radius: 8px;
+        padding: 8px 30px;
+        width: fit-content;
+        background-color: $narancasta;
+        border: none;
+        outline: none;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: transparent;
+        border: $narancasta 1px solid;
+
+        color: $narancasta;
+        outline: none;
+        transition: 0.3s all;
+      }
+    }
+  }
+}
+//KONTAKT KRAJ
+
+@media screen and (max-width: 1250px) {
+  .redkartica {
+    justify-content: center;
+    .kartica {
+      margin: 10px 0px;
+      border-radius: 10px !important;
+    }
+  }
+  .tkosmomi {
+    padding: 0px 10px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .kartica.druga {
+    height: 400px !important;
+  }
+  .kvadratic {
+    display: none;
+  }
+  .kvadratic2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 898px) {
+  .krugic {
+    display: none;
+  }
+  .col1 {
+    border-radius: 10px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .herotekst {
+    text-align: center;
+  }
+  .uslugekartica {
+    margin: 10px 0px !important;
+    width: 300px !important;
+  }
+  .socials {
+    right: 50% !important;
+    transform: translate(50%);
+  }
+  .kvadrat {
+    display: none;
+  }
+  .manjikvadratic {
+    display: none;
+  }
+  .krugveci {
+    display: none;
+    .krugmanji {
+      display: none;
+    }
+  }
+  .karticakontakt {
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    .col2 {
+      width: 100%;
+      margin: auto;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      .inputi {
+        width: 100%;
+        margin: auto;
+      }
+    }
+  }
+  .redkontakt {
+    .col1 {
+      padding-left: 25px !important;
+      .socialkontakt {
+        left: 25px !important;
+      }
+      h2 {
+        font-size: 1.2rem !important;
+      }
+      p {
+        font-size: 0.8rem !important;
+      }
+    }
+  }
+}
