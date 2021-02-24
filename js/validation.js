@@ -27,11 +27,11 @@ gumb.addEventListener("click", function () {
     From: inputi.elements["emailadresa"].value,
     Subject: "This is the subject",
     Body:
-      imeprezime.value +
+      inputi.elements["imeprezime"].value +
       "<br>" +
-      brojmobitela["brojmobitela"] +
+      inputi.elements["brojmobitela"].value +
       "<br>" +
-      poruka["poruka"] +
+      inputi.elements["poruka"].value +
       "<br>",
   }).then((msg) => alert("Email uspješno poslan!"));
 });
