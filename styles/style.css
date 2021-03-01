@@ -95,13 +95,15 @@
   top: 0;
   bottom: 0px;
   left: 150px;
-  background-color: #2d4059;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d4059), to(#4d6d96));
+  background-image: linear-gradient(#2d4059, #4d6d96);
 }
 
 .hero .manjikvadratic {
   position: absolute;
   width: 20px;
-  background-color: #ea5455;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ea5455), to(#ff6d6d));
+  background-image: linear-gradient(#ea5455, #ff6d6d);
   top: 350px;
   bottom: 350px;
   right: 0;
@@ -111,7 +113,8 @@
   position: absolute;
   width: 250px;
   height: 250px;
-  background-color: #ea5455;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ea5455), to(#ff6d6d));
+  background-image: linear-gradient(#ea5455, #ff6d6d);
   top: 20px;
   left: 400px;
 }
@@ -120,7 +123,8 @@
   position: absolute;
   width: 250px;
   height: 250px;
-  background-color: #ea5455;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ea5455), to(#ff6d6d));
+  background-image: linear-gradient(#ea5455, #ff6d6d);
   bottom: 20px;
   left: 50px;
 }
@@ -217,7 +221,8 @@
   position: relative;
   width: 300px;
   height: 400px;
-  background-color: #ea5455;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ea5455), to(#ff6363));
+  background-image: linear-gradient(#ea5455, #ff6363);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,7 +260,8 @@
 .onama .prozirnakartica .kartica.druga {
   border-radius: 15px;
   height: 450px;
-  background-color: #fab95b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5b726), to(#ffd166));
+  background-image: linear-gradient(#f5b726, #ffd166);
 }
 
 .onama .prozirnakartica .kartica.prva {
