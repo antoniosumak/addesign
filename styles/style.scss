@@ -253,21 +253,16 @@
     align-items: center;
     .uslugekartica.treca,
     .uslugekartica.cetvrta {
-      background: rgb(2, 0, 36);
-      background: linear-gradient(
-        180deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(234, 84, 85, 1) 0%,
-        rgba(45, 64, 89, 1) 100%
-      );
+      background-color: #f9f9f9;
       i {
-        color: $crna;
+        color: $narancasta;
       }
       .uslugatekst {
-        color: white;
+        color: #343a40;
       }
       .uslugaopis {
-        color: white;
+        color: #6c757d;
+        font-size: 14px;
       }
     }
     .uslugekartica {
@@ -276,13 +271,7 @@
       width: 400px;
       height: 350px;
       box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
-      background: rgb(2, 0, 36);
-      background: linear-gradient(
-        0deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(234, 84, 85, 1) 0%,
-        rgba(45, 64, 89, 1) 100%
-      );
+      background-color: #f9f9f9;
       border-radius: 20px;
       margin: 20px;
       display: flex;
@@ -306,7 +295,7 @@
         i {
           margin-left: 10px;
           font-size: 18px;
-          color: black;
+          color: $crna;
         }
         p {
           font-weight: 400;
@@ -314,19 +303,19 @@
       }
       i {
         font-size: 40px;
-        color: white;
+        color: $narancasta;
       }
       .uslugatekst {
         margin-top: 30px;
-        color: $crna;
+        color: #343a40;
         font-size: 1.2rem;
-        color: $crna;
       }
       .uslugaopis {
         text-align: center;
+        font-size: 14px;
         margin-top: 15px;
         padding: 0px 20px;
-        color: $crna;
+        color: #6c757d;
       }
       .krugic {
         z-index: 11;
@@ -382,6 +371,25 @@
       i {
         display: none;
       }
+    }
+  }
+  .uslugekartica.prva {
+    position: relative;
+    .probagore {
+      z-index: 20;
+      position: absolute;
+      top: 0;
+      right: 0px;
+      width: 80px;
+      height: 160px;
+    }
+    .proba {
+      z-index: 20;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 120px;
+      height: 100px;
     }
   }
   .uslugekartica.druga {

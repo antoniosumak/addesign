@@ -346,24 +346,23 @@
 
 .usluge .uslugered .uslugekartica.treca,
 .usluge .uslugered .uslugekartica.cetvrta {
-  background: #020024;
-  background: -webkit-gradient(linear, left top, left bottom, from(#020024), color-stop(0%, #ea5455), to(#2d4059));
-  background: linear-gradient(180deg, #020024 0%, #ea5455 0%, #2d4059 100%);
+  background-color: #f9f9f9;
 }
 
 .usluge .uslugered .uslugekartica.treca i,
 .usluge .uslugered .uslugekartica.cetvrta i {
-  color: #15181d;
+  color: #ea5455;
 }
 
 .usluge .uslugered .uslugekartica.treca .uslugatekst,
 .usluge .uslugered .uslugekartica.cetvrta .uslugatekst {
-  color: white;
+  color: #343a40;
 }
 
 .usluge .uslugered .uslugekartica.treca .uslugaopis,
 .usluge .uslugered .uslugekartica.cetvrta .uslugaopis {
-  color: white;
+  color: #6c757d;
+  font-size: 14px;
 }
 
 .usluge .uslugered .uslugekartica {
@@ -373,9 +372,7 @@
   height: 350px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
-  background: #020024;
-  background: -webkit-gradient(linear, left bottom, left top, from(#020024), color-stop(0%, #ea5455), to(#2d4059));
-  background: linear-gradient(0deg, #020024 0%, #ea5455 0%, #2d4059 100%);
+  background-color: #f9f9f9;
   border-radius: 20px;
   margin: 20px;
   display: -webkit-box;
@@ -417,7 +414,7 @@
 .usluge .uslugered .uslugekartica .cts i {
   margin-left: 10px;
   font-size: 18px;
-  color: black;
+  color: #15181d;
 }
 
 .usluge .uslugered .uslugekartica .cts p {
@@ -426,21 +423,21 @@
 
 .usluge .uslugered .uslugekartica i {
   font-size: 40px;
-  color: white;
+  color: #ea5455;
 }
 
 .usluge .uslugered .uslugekartica .uslugatekst {
   margin-top: 30px;
-  color: #15181d;
+  color: #343a40;
   font-size: 1.2rem;
-  color: #15181d;
 }
 
 .usluge .uslugered .uslugekartica .uslugaopis {
   text-align: center;
+  font-size: 14px;
   margin-top: 15px;
   padding: 0px 20px;
-  color: #15181d;
+  color: #6c757d;
 }
 
 .usluge .uslugered .uslugekartica .krugic {
@@ -506,6 +503,28 @@
 
 .usluge .uslugered .uslugekartica:hover i {
   display: none;
+}
+
+.usluge .uslugekartica.prva {
+  position: relative;
+}
+
+.usluge .uslugekartica.prva .probagore {
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 80px;
+  height: 160px;
+}
+
+.usluge .uslugekartica.prva .proba {
+  z-index: 20;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  height: 100px;
 }
 
 .usluge .uslugekartica.druga .uslugaopis {
