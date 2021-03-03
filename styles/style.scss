@@ -94,7 +94,7 @@
   }
   .kvadratic {
     position: absolute;
-    width: 250px;
+    width: 500px;
     height: 250px;
     background-image: linear-gradient(#ea5455, #ff6d6d);
     top: 20px;
@@ -139,7 +139,7 @@
   .prozirnakartica {
     border-radius: 15px;
     position: relative;
-    margin-top: 100px !important;
+    margin-top: 60px !important;
     width: 80%;
     min-height: 500px;
     margin: auto;
@@ -289,6 +289,29 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      .skriveno {
+        display: none;
+      }
+      .cts {
+        display: none;
+        background-color: $narancasta;
+        display: flex;
+        align-items: center;
+        padding: 3px 30px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        color: white;
+        margin-top: 20px;
+        i {
+          margin-left: 10px;
+          font-size: 18px;
+          color: black;
+        }
+        p {
+          font-weight: 400;
+        }
+      }
       i {
         font-size: 40px;
         color: white;
@@ -316,35 +339,80 @@
         border-radius: 50%;
       }
     }
-    .uslugekartica.druga {
+    .uslugekartica:hover {
+      -moz-transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+      -o-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+      transition: ease-in 0.5s;
+      background-image: url(/slike/shapes.jpg);
+      background-position: center;
+      background-size: cover;
+      .skriveno {
+        display: block;
+      }
+
+      .krugic {
+        display: none;
+      }
+      .uslugatekst {
+        transform: scaleX(-1);
+        color: white;
+      }
+      .cts {
+        transform: scaleX(-1);
+      }
+      .cts:hover {
+        transition: ease-in-out 0.3s;
+        cursor: pointer;
+        background-color: white;
+        p {
+          color: $narancasta;
+        }
+        i {
+          display: block;
+          margin-left: 20px;
+          margin-right: -10px;
+        }
+      }
       .uslugaopis {
-        margin-bottom: 25px;
+        display: none;
+      }
+      i {
+        display: none;
       }
     }
-    .uslugekartica.treca {
-      .uslugaopis {
-        margin-bottom: 20px;
-      }
+  }
+  .uslugekartica.druga {
+    .uslugaopis {
+      margin-bottom: 25px;
     }
   }
-  .uslugered.drugi {
-    margin-bottom: 120px;
-  }
-  .gore {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 450px;
-    height: 700px;
-  }
-  .dole {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 500px;
-    height: 400px;
+  .uslugekartica.treca {
+    .uslugaopis {
+      margin-bottom: 20px;
+    }
   }
 }
+.uslugered.drugi {
+  margin-bottom: 120px;
+}
+.gore {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 700px;
+}
+.dole {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 400px;
+}
+
 //USLUGE KRAJ
 
 //KONTAKT POČETAK
@@ -375,7 +443,7 @@
   .karticakontakt {
     position: relative;
     width: 80%;
-    min-height: 70vh;
+    min-height: 60vh;
     margin: auto;
     background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -632,5 +700,23 @@
         font-size: 0.8rem !important;
       }
     }
+  }
+}
+
+@keyframes strelica {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 30px;
+  }
+  50% {
+    left: 50px;
+  }
+  75% {
+    left: 70px;
+  }
+  100% {
+    left: 100px;
   }
 }
